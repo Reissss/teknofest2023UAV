@@ -309,7 +309,7 @@ class Move:
                     self.MoveZ(6)
                     modes.loiter_mode()
                     rospy.sleep(5)
-                    os.system("python3 pca.py")
+                    #os.system("python3 pca.py")
                     modes.offboard_mode()
                     self.MoveZ(10)
                     rospy.sleep(5)
