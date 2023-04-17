@@ -474,11 +474,14 @@ def mission():
     rospy.sleep(10)
     modes.offboard_mode()
     print("Offboard mode activated")
-    Motion(40.993631, 28.724096,0)
+    """Motion(40.993631, 28.724096,0)
     print("Going to waypoint")
     move.MoveCenter()
-    print("Moving center")
-
+    print("Moving center")"""
+    move.MoveX(6)
+    move.MoveY(6)
+    move.MoveX(-6)
+    move.MoveY(-6)
     """movex = -10
     for i in range(2):
         move.MoveX(movex)
