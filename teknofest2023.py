@@ -20,11 +20,11 @@ import os
 import time
 import random2 as random
 
-liste = []
+"""liste = []
 for i in range(1,1000):
     i = str(i)
     liste.append(i+'.avi')
-a = random.choice(liste)
+a = random.choice(liste)"""
 
 config = {
   "apiKey": "AIzaSyB2GMMbPd952xFNQZKRkwPjwQsU-YxT0rM",
@@ -382,8 +382,8 @@ def image_callback():
     lower_red2 = np.array ([170, 120, 70])
     upper_red2 = np.array ([180, 255, 255])
 
-    fourcc = cv2.VideoWriter_fourcc (*'XVID')
-    out = cv2.VideoWriter (a, fourcc, 15.0, (1024, 768))
+    """fourcc = cv2.VideoWriter_fourcc (*'XVID')
+    out = cv2.VideoWriter (a, fourcc, 15.0, (1024, 768))"""
 
     camSet = 'nvarguscamerasrc !  video/x-raw(memory:NVMM), width=3264, height=2464, ' \
              'format=NV12, framerate=21/1 ! nvvidconv flip-method=' + "2" + \
