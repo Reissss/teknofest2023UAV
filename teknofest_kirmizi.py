@@ -439,12 +439,12 @@ def moveCenter():
             msg1.type_mask = int ('011111000111', 2)
 
             if farky <= -dist:
-                    msg1.velocity.x = -v
+                    msg1.velocity.x = v
                     velocityPub.publish (msg1)
                     rate.sleep ()
 
             elif farky >= dist:
-                    msg1.velocity.x = v
+                    msg1.velocity.x = -v
                     velocityPub.publish (msg1)
                     rate.sleep ()
 
@@ -454,12 +454,12 @@ def moveCenter():
                     rate.sleep ()
 
             if farkx <= -dist :
-                msg1.velocity.y = -v
+                msg1.velocity.y = v
                 velocityPub.publish (msg1)
                 rate.sleep ()
 
             elif farkx >= dist:
-                msg1.velocity.y = v
+                msg1.velocity.y = -v
                 velocityPub.publish (msg1)
                 rate.sleep ()
 
